@@ -4,10 +4,10 @@ pdf = FPDF(orientation= "P", unit="mm", format= "A4")
 
 pdf.add_page()
 pdf.set_font(family="Arial",style= "B", size = 12)
-text = """ Streamlit makes it easy for you to visualize, mutate, and share data\n. 
-        The API reference is organized by activity type, like displaying data \n
-        or optimizing performance. Each section includes methods associated with \n
-        the activity type, including examples.)"""
+text = (" Streamlit makes it easy for you to visualize, mutate, and share data\n. \n"
+        "        The API reference is organized by activity type, like displaying data \n"
+        "        or optimizing performance. Each section includes methods associated with \n"
+        "        the activity type, including examples.")
 
 pdf.cell(w=0, h= 12, txt = text, align="L", ln =1, border=1)
 
