@@ -1,8 +1,13 @@
 from fpdf import FPDF
+import pandas as pd
+
 
 pdf = FPDF(orientation= "P", unit="mm", format= "A4")
 
+df = pd.read_csv("topic.csv")
 pdf.add_page()
+
+
 pdf.set_font(family="Arial",style= "B", size = 12)
 text = (" Streamlit makes it easy for you to visualize, mutate, and share data\n. \n"
         "        The API reference is organized by activity type, like displaying data \n"
