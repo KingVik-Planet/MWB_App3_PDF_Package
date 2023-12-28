@@ -25,7 +25,7 @@ for index,row in df.iterrows():
     for i in range(row["Pages"] - 1):
         pdf.add_page()
 
-        #Footer Guidelines
+        #Footer Guidelines.
         pdf.ln(272)
 
         pdf.set_font(family="Times", style="B", size=12)
